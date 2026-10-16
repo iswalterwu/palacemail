@@ -1,0 +1,17 @@
+{
+  "name": "palacemail",
+  "private": true,
+  "description": "以 AI 为内核，以人为界面的邮箱",
+  "license": "MIT",
+  "packageManager": "pnpm@11.21.0",
+  "engines": {
+    "node": ">=22.12",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "dev": "pnpm --filter desktop tauri dev",
+    "build": "pnpm --filter desktop build",
+    "lint": "pnpm --recursive lint",
+    "tauri": "pnpm --filter desktop tauri"
+  }
+}

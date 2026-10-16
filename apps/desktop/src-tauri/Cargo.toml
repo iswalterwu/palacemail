@@ -1,0 +1,21 @@
+[package]
+name = "palacemail-desktop"
+description = "PalaceMail 桌面应用的 Tauri 壳：创建窗口、注册 IPC 命令，把界面的调用转交给 palace-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[lib]
+# `_lib` 后缀用于与同名二进制目标区分（Windows 上会冲突），
+# 见 https://github.com/rust-lang/cargo/issues/8519
+name = "palacemail_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { workspace = true }
+
+[dependencies]
+tauri = { workspace = true }
+palace-core = { workspace = true }

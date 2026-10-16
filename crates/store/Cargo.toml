@@ -1,0 +1,11 @@
+[package]
+name = "palace-store"
+description = "PalaceMail 唯一事实来源：规范化消息、会话、联系人、全文与向量索引、派生数据、作业队列"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+palace-mail = { workspace = true }

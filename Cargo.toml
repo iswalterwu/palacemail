@@ -1,0 +1,39 @@
+# PalaceMail Rust 工作区。
+# 四层单向依赖：core → assistant → store → mail（见 docs/architecture.md 第 3 节）。
+# apps/desktop/src-tauri 是 Tauri 壳，只依赖 palace-core。
+
+[workspace]
+resolver = "3"
+members = [
+    "crates/core",
+    "crates/assistant",
+    "crates/store",
+    "crates/mail",
+    "apps/desktop/src-tauri",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.90"
+license = "MIT"
+repository = "https://github.com/iswalterwu/palacemail"
+
+[workspace.dependencies]
+# 内部 crate：上层只能引用紧邻的下层，不得反向引用。
+palace-core = { path = "crates/core" }
+palace-assistant = { path = "crates/assistant" }
+palace-store = { path = "crates/store" }
+palace-mail = { path = "crates/mail" }
+
+# 外部依赖：版本在此集中管理。
+tauri = { version = "2", features = [] }
+tauri-build = { version = "2", features = [] }
+
+# 发布构建优化，见 https://tauri.app/concept/size/#cargo-configuration
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true

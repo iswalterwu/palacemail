@@ -1,0 +1,11 @@
+[package]
+name = "palace-core"
+description = "PalaceMail 内核对外 API：统一命令层、查询与事件、各层组装与生命周期"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+palace-assistant = { workspace = true }

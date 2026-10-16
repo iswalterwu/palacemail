@@ -1,0 +1,72 @@
+/* 只消费 @palacemail/ui 的设计令牌，不出现字面量颜色、字号、间距与时长。 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--pm-font-sans);
+  font-size: var(--pm-text-md);
+  line-height: var(--pm-leading-normal);
+  color: var(--pm-color-text);
+  background: var(--pm-color-bg);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  cursor: default;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pm-space-3);
+  height: 100%;
+  padding: var(--pm-space-8);
+  text-align: center;
+  animation: splash-enter var(--pm-duration-slow) var(--pm-ease-enter) both;
+}
+
+.splash__title {
+  margin: 0;
+  font-size: var(--pm-text-2xl);
+  font-weight: var(--pm-weight-semibold);
+  letter-spacing: var(--pm-tracking-wide);
+}
+
+.splash__tagline {
+  margin: 0;
+  color: var(--pm-color-text-muted);
+}
+
+.splash__version {
+  margin: var(--pm-space-5) 0 0;
+  padding: var(--pm-space-1) var(--pm-space-3);
+  font-family: var(--pm-font-mono);
+  font-size: var(--pm-text-sm);
+  color: var(--pm-color-text-muted);
+  background: var(--pm-color-surface);
+  border: 1px solid var(--pm-color-border);
+  border-radius: var(--pm-radius-full);
+}
+
+@keyframes splash-enter {
+  from {
+    opacity: 0;
+    transform: translateY(var(--pm-space-2));
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

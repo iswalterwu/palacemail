@@ -1,0 +1,24 @@
+/*
+ * PalaceMail 设计令牌 · 间距
+ *
+ * 4px 基准刻度。留白是东方风格的核心，刻度顶端刻意留得宽裕。
+ */
+
+:root {
+  /* 间距刻度 */
+  --pm-space-0: 0;
+  --pm-space-1: 0.25rem; /* 4px */
+  --pm-space-2: 0.5rem; /* 8px */
+  --pm-space-3: 0.75rem; /* 12px */
+  --pm-space-4: 1rem; /* 16px */
+  --pm-space-5: 1.5rem; /* 24px */
+  --pm-space-6: 2rem; /* 32px */
+  --pm-space-7: 3rem; /* 48px */
+  --pm-space-8: 4rem; /* 64px */
+
+  /* 圆角 */
+  --pm-radius-sm: 4px;
+  --pm-radius-md: 8px;
+  --pm-radius-lg: 12px;
+  --pm-radius-full: 9999px;
+}

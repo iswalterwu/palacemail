@@ -1,0 +1,10 @@
+[package]
+name = "palace-mail"
+description = "PalaceMail 邮件协议层：IMAP/SMTP 适配、OAuth、增量同步、出站队列"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]

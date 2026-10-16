@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- PalaceMail 占位图标：墨色底、纸色信封、朱砂印。正式视觉待设计，运行 `pnpm tauri icon app-icon.svg` 重新生成 src-tauri/icons。 -->
+  <rect width="1024" height="1024" rx="232" fill="#1f2430"/>
+  <rect x="176" y="296" width="672" height="464" rx="56" fill="#f3ebdd"/>
+  <path d="M232 352 L512 592 L792 352" fill="none" stroke="#1f2430" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="648" y="568" width="152" height="152" rx="28" fill="#c8402f"/>
+</svg>

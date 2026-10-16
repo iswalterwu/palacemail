@@ -1,0 +1,4 @@
+# 统一本地与 CI 的 Rust 工具链：rustup 会按此文件自动选用 stable 并安装所需组件。
+[toolchain]
+channel = "stable"
+components = ["rustfmt", "clippy"]

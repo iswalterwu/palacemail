@@ -1,0 +1,11 @@
+[package]
+name = "palace-assistant"
+description = "PalaceMail AI 助手层：供应商抽象、提示词注册表、上下文组装、摘要/分类/检索/起草流水线"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+palace-store = { workspace = true }

@@ -1,0 +1,25 @@
+/*
+ * PalaceMail 设计令牌 · 动效
+ *
+ * 节奏克制：短时长、柔和缓动；用户开启"减少动态效果"时全部归零。
+ */
+
+:root {
+  /* 时长 */
+  --pm-duration-fast: 120ms;
+  --pm-duration-base: 200ms;
+  --pm-duration-slow: 320ms;
+
+  /* 缓动 */
+  --pm-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --pm-ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --pm-ease-exit: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --pm-duration-fast: 0ms;
+    --pm-duration-base: 0ms;
+    --pm-duration-slow: 0ms;
+  }
+}

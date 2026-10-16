@@ -1,0 +1,62 @@
+/*
+ * PalaceMail 设计令牌 · 色彩
+ *
+ * 主题即一组令牌：`:root` 为默认明亮主题，`[data-theme="dark"]` 为默认暗色主题。
+ * 组件只引用这些变量，不写死颜色；新主题只需覆盖同名变量。
+ * 以下取值均为占位，待视觉设计确定后替换。
+ */
+
+:root {
+  color-scheme: light;
+
+  /* 层次 */
+  --pm-color-bg: #f7f5f0;
+  --pm-color-surface: #ffffff;
+  --pm-color-surface-raised: #fbfaf7;
+
+  /* 文字 */
+  --pm-color-text: #1f2430;
+  --pm-color-text-muted: #6b7280;
+  --pm-color-text-inverse: #f7f5f0;
+
+  /* 边框与分隔 */
+  --pm-color-border: #e4e0d8;
+  --pm-color-border-strong: #c9c3b8;
+
+  /* 强调：朱砂 */
+  --pm-color-accent: #c8402f;
+  --pm-color-accent-hover: #b0351f;
+  --pm-color-accent-contrast: #ffffff;
+  --pm-color-selection: rgb(200 64 47 / 12%);
+
+  /* 语义 */
+  --pm-color-success: #3c8d5a;
+  --pm-color-warning: #c48a1a;
+  --pm-color-danger: #c0392b;
+  --pm-color-info: #3a6ea5;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --pm-color-bg: #15181f;
+  --pm-color-surface: #1f2430;
+  --pm-color-surface-raised: #272d3b;
+
+  --pm-color-text: #e8e4dc;
+  --pm-color-text-muted: #9aa0ab;
+  --pm-color-text-inverse: #15181f;
+
+  --pm-color-border: #2f3542;
+  --pm-color-border-strong: #434a5a;
+
+  --pm-color-accent: #e0604d;
+  --pm-color-accent-hover: #ea7a69;
+  --pm-color-accent-contrast: #15181f;
+  --pm-color-selection: rgb(224 96 77 / 20%);
+
+  --pm-color-success: #5fb37a;
+  --pm-color-warning: #d9a441;
+  --pm-color-danger: #e2574a;
+  --pm-color-info: #6f9bd1;
+}

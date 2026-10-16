@@ -1,0 +1,5 @@
+/* PalaceMail 设计令牌总入口：四类令牌各自独立，应用只需引入本文件。 */
+@import "./color.css";
+@import "./typography.css";
+@import "./spacing.css";
+@import "./motion.css";

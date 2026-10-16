@@ -1,0 +1,42 @@
+/*
+ * PalaceMail 设计令牌 · 字体
+ *
+ * 中西文混排优先：字体栈先取各系统的中文字体，再回落到系统无衬线字体。
+ * 字号以 rem 为单位，随用户的系统字号缩放。
+ */
+
+:root {
+  /* 字体族 */
+  --pm-font-sans:
+    -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI",
+    "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", system-ui,
+    "Segoe UI", sans-serif;
+  --pm-font-serif:
+    "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", Georgia,
+    serif;
+  --pm-font-mono:
+    ui-monospace, "SF Mono", "Cascadia Mono", "JetBrains Mono", Menlo, Consolas,
+    monospace;
+
+  /* 字号刻度 */
+  --pm-text-xs: 0.75rem;
+  --pm-text-sm: 0.875rem;
+  --pm-text-md: 1rem;
+  --pm-text-lg: 1.125rem;
+  --pm-text-xl: 1.375rem;
+  --pm-text-2xl: 1.75rem;
+
+  /* 行高 */
+  --pm-leading-tight: 1.3;
+  --pm-leading-normal: 1.6;
+  --pm-leading-loose: 1.8;
+
+  /* 字重 */
+  --pm-weight-regular: 400;
+  --pm-weight-medium: 500;
+  --pm-weight-semibold: 600;
+
+  /* 字距：中文标题常用的微松排 */
+  --pm-tracking-normal: 0;
+  --pm-tracking-wide: 0.04em;
+}
